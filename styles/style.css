@@ -168,3 +168,26 @@ body {
     margin: 10px 0;
     color: #333;
 }
+
+
+
+
+.projects-section { padding: 60px 20px; background-color: #ffffff; text-align: center; width: 100%; }
+.projects-grid { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px; 
+    max-width: 1000px; 
+    margin: 20px auto; 
+}
+.project-card { 
+    background: #f8f9fa; padding: 25px; border-radius: 12px; 
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: left; 
+}
+.tech-stack { 
+    display: flex; flex-wrap: wrap; gap: 8px; margin-top: 15px; 
+}
+.tech-stack span { 
+    background: #e9ecef; padding: 4px 10px; border-radius: 5px; 
+    font-size: 0.75rem; color: #495057; font-weight: bold; 
+}

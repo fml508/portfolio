@@ -6,8 +6,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
-
 
 .navbar {
     background-color: #921;
@@ -40,20 +40,131 @@ body {
     text-decoration: underline;
 }
 
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 .about-me {
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  padding: 40px;
+    padding: 40px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .profile-img {
-  width: 200px; 
-  height: 200px;
-  border-radius: 50%; 
-  object-fit: cover;
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%; 
+    object-fit: cover;
 }
 
 .about-text h2 {
-  margin-top: 0;
+    margin-top: 0;
+}
+
+.skills-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    width: 100%;
+}
+
+.skills-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #2d3436;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.skill-category {
+    background: #f8f9fa;
+    padding: 30px;
+    border-radius: 12px;
+    border-top: 4px solid #007bff;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.skill-category:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.skill-category h3 {
+    margin-bottom: 20px;
+    color: #007bff;
+    font-size: 1.25rem;
+}
+
+.skill-category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skill-category li {
+    margin: 10px 0;
+    font-weight: 500;
+    color: #495057;
+}
+
+.skill-category li::before {
+    content: "•";
+    color: #007bff;
+    margin-right: 10px;
+}
+
+
+.cert-section {
+    padding: 60px 20px;
+    background-color: #f4f4f9;
+    text-align: center;
+    width: 100%;
+}
+
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.cert-card {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.cert-card img {
+    max-width: 100px;
+    margin-bottom: 15px;
+}
+.cert-card img {
+    max-width: 100px;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease;
+    cursor: zoom-in;
+}
+
+.cert-card img:hover {
+    transform: scale(3.5);
+}
+
+
+.cert-card h3 {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    color: #333;
 }

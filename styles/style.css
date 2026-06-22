@@ -191,3 +191,14 @@ body {
     background: #e9ecef; padding: 4px 10px; border-radius: 5px; 
     font-size: 0.75rem; color: #495057; font-weight: bold; 
 }
+
+
+.footer {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    background-color: #2d3436;
+    color: #ffffff;
+    font-size: 0.9rem;
+    margin-top: auto; /* Ez letolja az oldal aljára, ha kevés a tartalom */
+}
